@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<!--Color Palet: #f4e400-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--This is the title for the website-->
+    <title >Testing Website</title>
+    <link rel="stylesheet" href="format.css">
+    <script defer src="functionality.js"></script>
+    <script src="https://kit.fontawesome.com/90839497e3. js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!--This is for the top breadcrumb of the page-->
+
+    <nav class="nav_top">
+        <div class="top_logo">
+            <a href="#">
+                <img src="Images/pixel_maddmundstudios_full_logo.png" alt="logo">
+            </a>
+        </div>
+
+        <!--Currently this is a place holder to center the socials-->
+        <div>
+            <a>
+                         
+            </a>
+        </div>
+
+        <div class="socials">
+            <a href="#">
+                <img src="Images/instagram_icon.png" alt="logo">
+            </a>
+            <a href="#">
+                <img src="Images/patreon_icon.png" alt="logo">
+            </a>
+            <a href="#">
+                <img src="Images/tiktok_icon.png" alt="logo">
+            </a>
+            <a href="#">
+                <img src="Images/youtube_icon.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav-items">
+            <div class="game_dropdown">
+                <button>Games</button>
+                <div class="game_content">
+                    <a href="">Game One</a>
+                    <a href="">Game Two</a>
+                    <a href="">Game Three</a>
+                </div>
+            </div>
+            <a href="Other Pages/merch_page.html">
+                Merch</a>
+            <a href="Other Pages/blog_page.html">
+                Blog
+            </a>
+            <a href="#about_us_section">
+                About
+            </a>
+        </div>
+    </nav>
+
+    <!--This script triggers the heading to change when you scroll-->
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector(".nav_top");
+            header.classList.toggle("sticky_nav_top", window.scrollY > 0);
+            header = document.querySelector(".game_dropdown");
+            header.classList.toggle("sticky_game_dropdown", window.scrollY > 0);
+            header = document.querySelector(".top_logo");
+            header.classList.toggle("sticky_top_logo", window.scrollY > 0);
+            header = document.querySelector(".socials");
+            header.classList.toggle("sticky_socials", window.scrollY > 0);
+        }) 
+    </script>
+
+    <!--This section is for the current game image being displayed-->
+
+    <section class="hidden">
+        <div>
+            Game Image Here
+        </div>
+    </section>
+
+    <!--This seciton is for the gaming videos that are going to be displayed-->
+
+    <section class="hidden">
+        <div>
+            Videos here
+        </div>
+    </section>
+
+    <!--This section is for the "about Us" part of the website-->
+
+    <section id="about_us_section" class="hidden">
+        <div>
+            About us here
+        </div>
+    </section>
+
+    <!--This is for the bottom breadcrumb of the page-->
+
+    <nav class="nav_bottom">
+        <div class="bottom_logo">            
+            <a href="#">
+                <img src="Images/pixel_maddmundstudios_crown_logo.png" alt="logo">
+            </a>
+        </div>
+        <!--Currently this is a place holder to center the socials-->
+        <div>
+            <a>
+                            
+            </a>
+        </div>
+        <div>
+            <a>
+                            
+            </a>
+        </div>
+        <div>
+            <a>
+                            
+            </a>
+        </div>
+        <div>
+            <a>
+                            
+            </a>
+        </div>
+        <div>
+            <a>
+                            
+            </a>
+        </div>
+        <div class="bottom_socials">
+            <a href="#">
+                <img src="Images/instagram_icon.png" alt="logo">
+            </a>
+            <a href="#">
+                <img src="Images/patreon_icon.png" alt="logo">
+            </a>
+            <a href="#">
+                <img src="Images/tiktok_icon.png" alt="logo">
+            </a>
+            <a href="#">
+                <img src="Images/youtube_icon.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav-items">
+            <a href="Other Pages/merch_page.html">Merch</a>
+            <a href="Other Pages/blog_page.html">Blog</a>
+            <a href="Other Pages/privacy_policy_page.html">Privacy Policy</a>
+        </div>
+    </nav>
+
+</body>
+</html>

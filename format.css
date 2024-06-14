@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+/*This is the Header*/
+
+.nav_top {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw-1300px) / 2);
+    z-index: 200;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    transition: 0.6s;
+}
+
+.nav_top a {
+    text-decoration: none;
+    color: #f4e400;
+    padding: 0 3rem;
+    transition: 0.2s;
+}
+
+.nav_top a:hover {
+    color: white;
+}
+
+.socials img{
+    color: #f4e400;
+    margin-right: -40px;
+    width: 18px;
+    height: 18px;
+    filter: invert(87%) sepia(22%) saturate(5851%) hue-rotate(9deg) brightness(110%) contrast(101%);
+    transition: 0.2s;
+}
+
+.socials img:hover{
+    margin-right: -40px;
+    width: 18px;
+    height: 18px;
+    filter:  invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+    transition: 0.2s;
+}
+
+.sticky_socials img{
+    margin-right: -40px;
+    width: 18px;
+    height: 18px;
+    filter: invert(0%) sepia(7%) saturate(6%) hue-rotate(75deg) brightness(97%) contrast(101%);
+    transition: 0.2s;
+}
+
+.socials img:hover{
+    margin-right: -40px;
+    width: 18px;
+    height: 18px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+    transition: 0.2s;
+}
+
+.sticky_socials img:hover{
+    margin-right: -40px;
+    width: 18px;
+    height: 18px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+    transition: 0.2s;
+}
+
+.top_logo img{
+    color: white;
+    width: 75px;
+    height: 75px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+    transition: 0.2s;
+}
+
+.sticky_top_logo img{
+    color: white;
+    width: 100px;
+    height: 100px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%)
+}
+
+.sticky_nav_top {
+    background-color:#f4e400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw-1300px) / 2);
+    z-index: 200;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    transition: 0.6s;
+}
+
+.sticky_nav_top a{
+    text-decoration: none;
+    color: #000;
+    padding: 0 3rem;
+    transition: 0.2s;
+}
+
+.sticky_nav_top a:hover {
+    color: #fff;
+    background-color: none;
+}
+
+
+
+/*This is the Footer*/
+
+.bottom_logo img{
+    color: white;
+    width: 50px;
+    height: 50px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+    transition: 0.2s;
+}
+
+.bottom_socials img{
+    margin-right: -40px;
+    width: 14px;
+    height: 14px;
+    filter:  invert(0%) sepia(7%) saturate(6%) hue-rotate(75deg) brightness(97%) contrast(101%);
+    transition: 0.2s;
+}
+
+.bottom_socials img:hover{
+    margin-right: -40px;
+    width: 14px;
+    height: 14px;
+    filter:  invert(100%) sepia(0%) saturate(7500%) hue-rotate(331deg) brightness(103%) contrast(100%);
+    transition: 0.2s;
+}
+
+.nav_bottom {
+    height: 60px;
+    background: #f4e400;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw-1300px) / 2);
+}
+
+.nav_bottom a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 3rem;
+    transition: 0.2s;
+}
+
+.nav_bottom a:hover {
+    color: #fff;
+    background-color: #f4e400;
+}
+
+/*This is the dropdown for the games section*/
+
+.game_dropdown{
+    display: inline-block;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0rem calc((100vw-1300px) / 2);
+}
+
+
+.game_dropdown button{
+    font-size: 1.0rem;
+    height: 100px;
+    color: #f4e400;
+    font-weight: bold;
+    background: transparent;
+    text-decoration: none;
+    padding: 0 2.5rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    border-top-right-radius: .2rem;
+    border-top-left-radius: .2rem;
+}
+
+.sticky_game_dropdown button{
+    font-size: 1.0rem;
+    height: 80px;
+    color: #000;
+    font-weight: bold;
+    background: transparent;
+    text-decoration: none;
+    padding: 0 2.25rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
+    border-top-right-radius: .2rem;
+    border-top-left-radius: .2rem;
+}
+
+.game_dropdown a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 19px;
+    transition: 0.2s;
+}
+
+.game_dropdown a:hover{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 19px;
+    background-color: #948a03;
+    transition: 0.6s;
+}
+
+.game_dropdown .game_content{
+    display: none;
+    position: absolute;
+    background-color: #f4e400;
+    min-width: 95px;
+    transition: 0.2s;
+    border-bottom-right-radius: .2rem;
+    border-bottom-left-radius: .2rem;
+}
+
+.game_dropdown a:hover{
+    color: #fff;
+    background-color: #f4e400;
+    transition: 0.2s;
+}
+
+.game_dropdown:hover .game_content{
+    display: block;
+    transition: 0.2s;
+}
+
+.game_dropdown:hover button{
+    color: #000;
+    background: #f4e400;
+    transition: 0.2s;
+}
+
+/*This is for the body of the page*/
+
+body {
+    font-weight: bold;
+    background-color: #131316;
+    color: #ffffff;
+    font-family: 'poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/*This is for the sections in the page*/
+
+section {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-style: italic;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    height: 1080px;
+}
+
+/*This animates the text to show up slowly*/
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+}
+
+@media(perfers-reduced-motion) {
+    .hidden{
+        transition: none;
+    }
+}
