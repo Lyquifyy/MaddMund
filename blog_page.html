@@ -1,4 +1,4 @@
-<!--This is the front page-->
+<!--This is the blog page-->
 
 <!DOCTYPE html>
 <!--Color Palet: #f4e400-->
@@ -6,14 +6,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--This is the title for the website-->
     <title >Testing Website</title>
-    <link rel="stylesheet" href="front_page.css">
-    <script defer src="front_page.js"></script>
+    <link rel="stylesheet" href="blog_page.css">
+    <script defer src="blog_page.js"></script>
     <script src="https://kit.fontawesome.com/90839497e3. js" crossorigin="anonymous"></script>
 </head>
 <body>
-
     <!--This is for the top breadcrumb of the page-->
 
     <header>
@@ -30,9 +30,8 @@
                     </div>
                 </div>
                 -->
+                <li><a href="index.html">Main Menu</a></li>
                 <li><a href="merch_page.html">Merch</a></li>
-                <li><a href="blog_page.html">Blog</a></li>
-                <li><a href="#about_us_section">About</a></li>
             </ul>
         </nav>
 
@@ -60,6 +59,53 @@
         </nav>
     </header>
 
+    <secion class="blog_header">
+        <h1>
+            <div class="hidden">
+                MaddMund Blogs
+            </div>
+        </h1>
+    </secion>
+
+    <section class="blog_section_right">
+        <section class="blog_image_container_right">
+        </section>
+        <section class="blog_info_container_right">
+            <div class="blog_title_right">
+                Title and Date
+            </div>
+            <div class="blog_info_right">
+                Info Here
+            </div>
+        </section>
+    </section>
+
+    <section class="blog_section_left">
+        <section class="blog_info_container_left">
+            <div class="blog_title_left">
+                Title and Date
+            </div>
+            <div class="blog_info_left">
+                Info Here
+            </div>
+        </section>
+        <section class="blog_image_container_left">
+        </section>
+    </section>
+
+    <section class="blog_section_right">
+        <section class="blog_image_container_right">
+        </section>
+        <section class="blog_info_container_right">
+            <div class="blog_title_right">
+                Title and Date
+            </div>
+            <div class="blog_info_right">
+                Info Here
+            </div>
+        </section>
+    </section>
+
     <!--This script triggers the heading to change when you scroll-->
 
     <script type="text/javascript">
@@ -74,51 +120,6 @@
             header.classList.toggle("sticky_socials", window.scrollY > 0);
         }) 
     </script>
-
-    <!--This section is for the current game-->
-
-    <section id="game_section">
-        <div class="hidden">
-            games here
-        </div>
-    </section>
-
-    <!--This section is for the current game image being displayed-->
-    <!--
-    <section id="games_section"class="hidden">
-        <section class="container">
-            <div class="slider-wrapper">
-                <div class="slider">
-                    <img id="slide-1" src="Images/Slideshow Image 1.jpg" alt="Testing image for slideshow"/>
-                    <img id="slide-2" src="Images/Slideshow Image 2.jpeg" alt="Testing image for slideshow"/>
-                    <img id="slide-3" src="Images/Slideshow Image 3.jpg" alt="Testing image for slideshow"/>
-                </div>
-                <div class="slider-nav">
-                    <a href="#slide-1"></a>
-                    <a href="#slide-2"></a>
-                    <a href="#slide-3"></a>
-                </div>
-            </div>
-        </section>
-    </section>
-    -->
-    <!--This seciton is for the gaming videos that are going to be displayed-->
-
-    <section id="video_section">
-        <div class="hidden">
-            Videos here
-        </div>
-    </section>
-
-    <!--This section is for the "about Us" part of the website-->
-
-    <section id="about_us_section">
-        <div class="hidden">
-            About us here
-        </div>
-    </section>
-
-    <!--This is for the bottom breadcrumb of the page-->
 
     <footer>
         <img class="bottom_logo" src="Images/pixel_maddmundstudios_crown_logo.png" alt="logo">
@@ -146,9 +147,9 @@
         </nav>
         <nav>
             <ul class="nav_bottom_items">
-                <li><a href="merch_page.html">Merch</a></li>
-                <li><a href="blog_page.html">Blog</a></li>
-                <li><a href="privacy_policy_page.html">Privacy Policy</a></li>
+                <li><a href="index.html">Main Menu</a></li>
+                <li><a href="Other Pages/merch_page.html">merch</a></li>
+                <li><a href="Other Pages/privacy_policy_page.html">Privacy Policy</a></li>
             </ul>
         </nav>
     </footer>
